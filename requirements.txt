@@ -1,0 +1,10 @@
+Flask
+Flask-Session
+langchain-community
+cohere
+urllib3
+sqlalchemy
+psycopg2-binary
+mysql-connector-python
+pywebview
+pyinstaller
