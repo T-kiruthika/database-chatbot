@@ -20,7 +20,7 @@ Session(server_app)
 # --- GLOBAL LLM CONFIGURATION (WITH EMBEDDED KEY) ---
 try:
     # --- IMPORTANT: PASTE YOUR ACTUAL, SECRET API KEY HERE! ---
-    EMBEDDED_API_KEY = "v3lqZhjJ910BTfkwTr4EuyW9OQIk0Q8DpinkDodj"
+    EMBEDDED_API_KEY = "Paste your key here "
 
     # Initialize the Cohere client directly with the embedded key
     co = cohere.Client(EMBEDDED_API_KEY)
