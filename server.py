@@ -10,19 +10,15 @@ from langchain.memory import ConversationBufferWindowMemory
 from sqlalchemy import create_engine, text
 from decimal import Decimal
 
-# --- FLASK APP AND SESSION CONFIGURATION ---
 server_app = Flask(__name__)
 server_app.config["SECRET_KEY"] = os.urandom(24)
 server_app.config["SESSION_TYPE"] = "filesystem"
 server_app.config["SESSION_PERMANENT"] = False
 Session(server_app)
 
-# --- GLOBAL LLM CONFIGURATION (WITH EMBEDDED KEY) ---
 try:
-    # --- IMPORTANT: PASTE YOUR ACTUAL, SECRET API KEY HERE! ---
     EMBEDDED_API_KEY = "Paste your key here "
 
-    # Initialize the Cohere client directly with the embedded key
     co = cohere.Client(EMBEDDED_API_KEY)
     LLM_CONFIGURED = True
     print("[SUCCESS] Successfully connected to Cohere API.")
@@ -43,7 +39,6 @@ def get_llm_response(prompt_text):
 
 session_memory = {}
 
-# --- FLASK ROUTES ---
 @server_app.route('/')
 def index():
     session.clear()
