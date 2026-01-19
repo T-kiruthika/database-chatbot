@@ -15,6 +15,7 @@ Originally developed during my **AI Internship (August 2025)** and later refined
 * 🪄 **Conversational State Management** – Features a reasoning memory that remembers session history for multi-turn follow-up queries.
 * 💻 **Hybrid Desktop Architecture** – A robust local application built with **Flask + PyWebView**, combining web flexibility with desktop performance.
 * 🤖 **AI-Assisted Engineering** – Developed using an **advanced AI-assisted workflow**, accelerating complex logic design and error-handling while maintaining manual architectural integrity.
+* **Self-Healing SQL Logic** - Automatically detects execution errors and performs recursive self-correction to generate functional queries without user intervention.
 
 ---
 
